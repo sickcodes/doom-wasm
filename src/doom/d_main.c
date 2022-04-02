@@ -613,6 +613,10 @@ static const char *banners[] = {
     "                   "
     "DOOM 2: Plutonia Experiment v%i.%i"
     "                           ",
+    // Doom_Mower_v2.wad
+    "                   "
+    "Lawn of The Dead: Corn Edit v%i.%i"
+    "                           ",
 };
 
 //
@@ -672,6 +676,7 @@ static void SetMissionForPackName(const char *pack_name)
         {"doom2", doom2},
         {"tnt", pack_tnt},
         {"plutonia", pack_plut},
+        {"doom_mower", pack_mower},
     };
 
     for (i = 0; i < arrlen(packs); ++i) {
@@ -801,6 +806,9 @@ static void D_SetGameDescription(void)
         }
         else if (logical_gamemission == pack_plut) {
             gamedescription = GetGameName("DOOM 2: Plutonia Experiment");
+        }
+        else if (logical_gamemission == pack_mower) {
+            gamedescription = GetGameName("Lawn of The Dead: Corn Edit");
         }
         else if (logical_gamemission == pack_tnt) {
             gamedescription = GetGameName("DOOM 2: TNT - Evilution");
@@ -941,7 +949,7 @@ static void InitGameVersion(void)
 
             gameversion = exe_hacx;
         }
-        else if (gamemode == shareware || gamemode == registered || (gamemode == commercial && gamemission == doom2)) {
+        else if (gamemode == shareware || gamemode == registered || gamemode == commercial) {
             // original
             gameversion = exe_doom_1_9;
 

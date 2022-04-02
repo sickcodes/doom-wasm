@@ -32,6 +32,7 @@ static struct
 } valid_modes[] = {
     { pack_chex, retail,     1, 5 },
     { doom,      shareware,  1, 9 },
+    { pack_mower, shareware,  1, 9 },
     { doom,      registered, 3, 9 },
     { doom,      retail,     4, 9 },
     { doom2,     commercial, 1, 32 },
@@ -142,7 +143,7 @@ boolean D_ValidGameVersion(GameMission_t mission, GameVersion_t version)
 
     // All Doom variants can use the Doom versions.
 
-    if (mission == doom2 || mission == pack_plut || mission == pack_tnt
+    if (mission == pack_mower || mission == doom2 || mission == pack_plut || mission == pack_tnt
      || mission == pack_hacx || mission == pack_chex)
     {
         mission = doom;

@@ -456,6 +456,8 @@ static const char *GameDescription(GameMode_t mode, GameMission_t mission)
             return "ultdoom";
         else
             return "doom";
+    case pack_mower:
+        return "doom_mower";
     case doom2:
         return "doom2";
     case pack_tnt:

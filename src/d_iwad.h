@@ -22,6 +22,7 @@
 #include "d_mode.h"
 
 #define IWAD_MASK_DOOM    ((1 << doom)           \
+                         | (1 << pack_mower)     \
                          | (1 << doom2)          \
                          | (1 << pack_tnt)       \
                          | (1 << pack_plut)      \

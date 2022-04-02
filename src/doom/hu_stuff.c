@@ -384,9 +384,12 @@ void HU_Start(void)
     
     switch ( logical_gamemission )
     {
+      case pack_mower:
+    s = HU_TITLE;
+    break;
       case doom:
-	s = HU_TITLE;
-	break;
+    s = HU_TITLE;
+    break;
       case doom2:
 	 s = HU_TITLE2;
          // Pre-Final Doom compatibility: map33-map35 names don't spill over

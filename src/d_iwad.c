@@ -33,6 +33,7 @@
 
 static const iwad_t iwads[] =
 {
+    { "Doom_Mower_v2.wad",    pack_mower,     shareware, "Lawn of The Dead: Corn Edit" },
     { "doom2.wad",    doom2,     commercial, "Doom II" },
     { "plutonia.wad", pack_plut, commercial, "Final Doom: Plutonia Experiment" },
     { "tnt.wad",      pack_tnt,  commercial, "Final Doom: TNT: Evilution" },
@@ -40,8 +41,8 @@ static const iwad_t iwads[] =
     { "doom1.wad",    doom,      shareware,  "Doom Shareware" },
     { "chex.wad",     pack_chex, retail,     "Chex Quest" },
     { "hacx.wad",     pack_hacx, commercial, "Hacx" },
-    { "freedoom2.wad", doom2,    commercial, "Freedoom: Phase 2" },
-    { "freedoom1.wad", doom,     retail,     "Freedoom: Phase 1" },
+    // { "freedoom2.wad", doom2,    commercial, "Freedoom: Phase 2" },
+    // { "freedoom1.wad", doom,     retail,     "Freedoom: Phase 1" },
     { "freedm.wad",   doom2,     commercial, "FreeDM" },
     { "heretic.wad",  heretic,   retail,     "Heretic" },
     { "heretic1.wad", heretic,   shareware,  "Heretic Shareware" },
